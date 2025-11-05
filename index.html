@@ -3,26 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Structura Hub - Home</title>
+    <title>Structura AI | The Debate Card Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-    <header>
-        <h1>Welcome to the Structura Hub!</h1>
-        <p>The home of the AI-powered debate assistant.</p>
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-indigo-600">Structura AI</h1>
+            <nav class="space-x-6 hidden sm:block">
+                <a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-150">Features</a>
+                <a href="#ethics" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-150">Ethics & AI</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <!-- This is your navigation menu -->
-        <a href="index.html">Home</a>
-        <a href="ethics.html">Ethics & Learning</a>
-        <a href="tools.html">AI Tools</a>
-    </nav>
+    <!-- HERO SECTION -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 text-center bg-white shadow-lg border-b-2 border-indigo-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+                Cut Cards, Not Corners.
+            </h2>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                Structura is the essential **Google Docs Add-on** for high-speed debate preparation, using Gemini AI to instantly index and summarize evidence.
+            </p>
+            
+            <!-- CRITICAL BUTTONS SECTION -->
+            <div class="flex flex-col sm:flex-row justify-center gap-5">
+                
+                <a href="YOUR_ADDON_INSTALLATION_LINK" 
+                   target="_blank" 
+                   class="px-10 py-4 bg-indigo-600 text-white font-extrabold text-lg rounded-xl shadow-2xl shadow-indigo-400/50 hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.03]">
+                    Install Structura for Google Docs
+                </a>
 
-    <main>
-        <h2>About the Project</h2>
-        <p>This is the main homepage for the Structura project...</p>
-    </main>
+                <a href="#features" 
+                   class="px-10 py-4 border-2 border-indigo-500 text-indigo-600 font-bold text-lg rounded-xl hover:bg-indigo-50 transition duration-300">
+                    See Key Features
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FEATURES SECTION -->
+    <section id="features" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Features Built For Your Debate Round</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                
+                <!-- Feature 1: Dual Indexing -->
+                <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-indigo-500">
+                    <div class="text-indigo-500 text-5xl mb-4">💡</div>
+                    <h3 class="text-2xl font-semibold mb-3">Dual-Mode Indexing</h3>
+                    <p class="text-gray-600">Generate two index entries from a single card: a technical, jargon-heavy summary for debate rounds, or a simplified "Parent Summary" for easy accessibility and understanding.</p>
+                </div>
+                
+                <!-- Feature 2: Auto-Launch -->
+                <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-indigo-500">
+                    <div class="text-indigo-500 text-5xl mb-4">🚀</div>
+                    <h3 class="text-2xl font-semibold mb-3">Automatic Launch</h3>
+                    <p class="text-gray-600">The Structura sidebar launches instantly whenever you open a document, eliminating the need to navigate the Add-ons menu. Get straight to cutting cards.</p>
+                </div>
+                
+                <!-- Feature 3: Focused on Docs -->
+                <div class="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-indigo-500">
+                    <div class="text-indigo-500 text-5xl mb-4">🔒</div>
+                    <h3 class="text-2xl font-semibold mb-3">Native Docs Integration</h3>
+                    <p class="text-gray-600">Built entirely within Google Docs (Apps Script), Structura is guaranteed to insert text reliably right where your cursor is, without requiring copy/paste into a separate tool.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ETHICS SECTION -->
+    <section id="ethics" class="py-20 px-4 sm:px-6 lg:px-8 bg-indigo-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Ethics and AI Use</h2>
+            <p class="text-lg text-gray-700 mb-8">
+                Structura uses the Gemini model exclusively for **summarization and indexing**—it is a tool to *structure* existing evidence. It is **not** used to generate new arguments, synthesize fake evidence, or rewrite original sources, preserving the integrity of competitive debate.
+            </p>
+            <a href="YOUR_ADDON_INSTALLATION_LINK" target="_blank" class="text-indigo-600 font-semibold hover:text-indigo-800 transition border-b border-indigo-600 pb-1">
+                Read our full Statement of Integrity & Use Cases
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Structura AI. Built for high school debate by students.</p>
+            <p class="text-sm mt-2 text-gray-400">Powered by Google Gemini.</p>
+        </div>
+    </footer>
 </body>
 </html>
