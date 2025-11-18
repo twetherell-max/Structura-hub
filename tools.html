@@ -3,26 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Structura Hub - AI Tools</title>
+    <title>Features - Structura</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        header { border-bottom: 1px solid #ddd; margin-bottom: 2rem; }
+        nav { padding: 1rem 0; }
+        nav a { text-decoration: none; color: #007bff; margin-right: 15px; font-weight: 500; }
+        nav a:hover { text-decoration: underline; }
+        h1 { color: #111; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+        tr:last-child td { border-bottom: none; }
+        tr:hover { background-color: #f5f5f5; }
+    </style>
 </head>
 <body>
-
     <header>
-        <h1>Structura AI Tool Hub</h1>
-        <p>Your AI co-pilot for debate prep.</p>
+        <h1>Structura Features</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tools.html">Features</a>
+            <a href="docs.html">Documentation</a>
+            <a href="ethics.html">Ethics</a>
+            <a href="support.html">Support</a>
+        </nav>
     </header>
 
-    <nav>
-        <!-- This is your navigation menu -->
-        <a href="index.html">Home</a>
-        <a href="ethics.html">Ethics & Learning</a>
-        <a href="tools.html">AI Tools</a>
-    </nav>
-
     <main>
-        <h2>Our Tools</h2>
-        <p>Here you can use our AI-powered generators...</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool Name</th>
+                    <th>Function Description</th>
+                    <th>Debate Use Case</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Index Creator</strong></td>
+                    <td>Uses AI to analyze selected text and automatically generates two types of summaries: a highly condensed "Technical" tag and a simple "Easy" summary, along with a source citation.</td>
+                    <td>Instantly create entries for your team's master index document without manual summarization, ensuring consistency and saving hours of work.</td>
+                </tr>
+                <tr>
+                    <td><strong>Advanced Card Condensing</strong></td>
+                    <td>Extracts text between two user-defined markers (e.g., start of an article and a heading) and uses AI to condense it into a concise, two-sentence summary.</td>
+                    <td>Quickly shorten long pieces of evidence ("cards") to their core claim, making them easier to read and deploy in-round.</td>
+                </tr>
+                <tr>
+                    <td><strong>Card → Paragraph Tool</strong></td>
+                    <td>Merges multiple selected paragraphs or list items into a single, clean paragraph, removing awkward line breaks while preserving formatting like bold and italics.</td>
+                    <td>Instantly clean up evidence copied from PDFs or websites that have messy formatting, making your documents readable and uniform.</td>
+                </tr>
+                <tr>
+                    <td><strong>Unique Tag Creator</strong></td>
+                    <td>Inserts a short, user-defined title above the selected text, automatically styled as a unique heading (H6) for easy identification and navigation.</td>
+                    <td>Create consistent, machine-readable tags for every piece of evidence, which can then be used by other tools to generate a custom outline.</td>
+                </tr>
+                <tr>
+                    <td><strong>Custom Document Outline</strong></td>
+                    <td>Scans the document for specific heading types (e.g., H1, H2, H6) and generates a clickable, in-sidebar table of contents for instant navigation.</td>
+                    <td>Jump directly to any card or section in a long, complex document (like a master file or block) without endless scrolling.</td>
+                </tr>
+                <tr>
+                    <td><strong>Link Checker (Refined)</strong></td>
+                    <td>Scans every hyperlink in the document, verifies if it's active, and automatically highlights any broken or inaccessible links in red for immediate attention.</td>
+                    <td>Ensure the integrity of your evidence before a tournament by quickly identifying and fixing dead source links.</td>
+                </tr>
+                <tr>
+                    <td><strong>Label-Based Formatting</strong></td>
+                    <td>Automatically applies a predefined set of formatting rules (e.g., font family, font size) to the entire document based on a keyword in the document's title (e.g., "POLICY").</td>
+                    <td>Maintain perfect formatting consistency across all team documents without any manual effort, ensuring everyone's work is uniform.</td>
+                </tr>
+                <tr>
+                    <td><strong>Label-Based Sharing</strong></td>
+                    <td>Moves the current Google Doc into a specific Google Drive folder and simultaneously shares it with a predefined list of editors based on a selected label.</td>
+                    <td>Automate document routing and permissions. Finish a file, select "Team Alpha Evidence," and the doc is instantly filed in the right folder and shared with the right people.</td>
+                </tr>
+                <tr>
+                    <td><strong>Auto-Citation Tool</strong></td>
+                    <td>As part of the Index Creator, this AI-powered feature identifies the author's last name and year from the text to create a standardized citation (e.g., Smith '24).</td>
+                    <td>Eliminate the need to manually format citations for every piece of evidence, ensuring all your sources follow the same convention.</td>
+                </tr>
+                <tr>
+                    <td><strong>Manual Folder Move</strong></td>
+                    <td>Provides a simple interface to move the current Google Doc into a designated Google Drive folder directly from the sidebar.</td>
+                    <td>Quickly organize your files into different project folders (e.g., "Affirmative," "Negative," "Impacts") without ever leaving the Google Docs interface.</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
-
 </body>
 </html>
