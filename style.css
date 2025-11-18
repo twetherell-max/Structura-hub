@@ -1,18 +1,18 @@
-/* Structura Website Stylesheet */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+/* Structura Website Stylesheet - "Exciting" Dark Mode */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
 
 :root {
-    --primary-color: #4f46e5;
-    --primary-hover: #4338ca;
-    --text-color: #374151;
-    --heading-color: #111827;
-    --background-color: #f9fafb;
-    --card-background: #ffffff;
-    --border-color: #e5e7eb;
+    --primary-color: #8b5cf6; /* Vibrant Purple */
+    --secondary-color: #3b82f6; /* Bright Blue */
+    --background-color: #111827; /* Deep Navy */
+    --surface-color: #1f2937; /* Lighter Navy for cards */
+    --border-color: #374151;
+    --text-color: #d1d5db; /* Light Gray */
+    --heading-color: #f9fafb; /* Off-white */
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.7;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -32,9 +32,12 @@ body {
 
 /* --- Header & Navigation --- */
 .site-header {
-    background-color: var(--card-background);
+    background-color: rgba(31, 41, 55, 0.8); /* Semi-transparent surface color */
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
-    padding: 0 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .navbar {
@@ -47,8 +50,8 @@ body {
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: 800;
+    font-size: 1.75rem;
     color: var(--heading-color);
     text-decoration: none;
 }
@@ -68,53 +71,64 @@ body {
 /* --- Main Content & Typography --- */
 h1, h2, h3 {
     color: var(--heading-color);
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.3;
 }
 
-h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-h2 { font-size: 1.75rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+h1 { 
+    font-size: 3rem; 
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2 { font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem; }
 p { margin-bottom: 1rem; }
 a { color: var(--primary-color); text-decoration: none; }
 a:hover { text-decoration: underline; }
 code {
-    background-color: var(--border-color);
-    color: var(--heading-color);
+    background-color: var(--background-color);
+    color: var(--primary-color);
     padding: 3px 6px;
     border-radius: 4px;
     font-size: 0.9em;
+    border: 1px solid var(--border-color);
 }
 
 /* --- Components --- */
 .card {
-    background-color: var(--card-background);
+    background-color: var(--surface-color);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 2rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .hero {
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
+    border: none;
+    background: none;
+    box-shadow: none;
 }
 
 .btn {
     display: inline-block;
     background-color: var(--primary-color);
     color: #fff;
-    padding: 12px 24px;
-    border-radius: 6px;
+    padding: 14px 28px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
-    border: none;
-    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
 }
 
 .btn:hover {
     background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.7);
     color: #fff;
     text-decoration: none;
 }
@@ -127,13 +141,13 @@ table {
 
 th, td {
     text-align: left;
-    padding: 14px;
+    padding: 16px;
     border-bottom: 1px solid var(--border-color);
 }
 
 th {
-    background-color: #f9fafb;
-    font-weight: 500;
+    background-color: var(--background-color);
+    font-weight: 700;
     color: var(--heading-color);
 }
 
@@ -145,9 +159,9 @@ tr:last-child td {
 .site-footer {
     text-align: center;
     padding: 2rem 1.5rem;
-    margin-top: 2rem;
-    background-color: var(--card-background);
+    margin-top: auto;
+    background-color: var(--surface-color);
     border-top: 1px solid var(--border-color);
-    color: #6b7280;
+    color: #9ca3af;
     font-size: 0.9rem;
 }
