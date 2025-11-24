@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features - Structura</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="favicon.png?v=2" type="image/png">
 </head>
 <body>
 
@@ -26,67 +26,58 @@
     <main class="container">
         <div class="card">
             <h2>Core Features</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tool Name</th>
-                        <th>Function Description</th>
-                        <th>Debate Use Case</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Index Creator</strong></td>
-                        <td>Uses AI to analyze selected text and automatically generates a technical tag, a simple summary, and a source citation.</td>
-                        <td>Instantly create entries for your team's master index document without manual summarization, ensuring consistency and saving hours of work.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Advanced Card Condensing</strong></td>
-                        <td>Extracts text between two user-defined markers and uses AI to condense it into a concise, two-sentence summary.</td>
-                        <td>Quickly shorten long pieces of evidence ("cards") to their core claim, making them easier to read and deploy in-round.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Card → Paragraph Tool</strong></td>
-                        <td>Merges multiple selected paragraphs or list items into a single, clean paragraph, removing awkward line breaks while preserving formatting.</td>
-                        <td>Instantly clean up evidence copied from PDFs or websites that have messy formatting, making your documents readable and uniform.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Unique Tag Creator</strong></td>
-                        <td>Inserts a short, user-defined title above the selected text, automatically styled as a unique heading (H6) for easy identification.</td>
-                        <td>Create consistent, machine-readable tags for every piece of evidence, which can then be used by other tools to generate a custom outline.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Custom Document Outline</strong></td>
-                        <td>Scans the document for specific heading types and generates a clickable, in-sidebar table of contents for instant navigation.</td>
-                        <td>Jump directly to any card or section in a long, complex document (like a master file or block) without endless scrolling.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Link Checker (Refined)</strong></td>
-                        <td>Scans every hyperlink in the document, verifies if it's active, and automatically highlights any broken or inaccessible links in red.</td>
-                        <td>Ensure the integrity of your evidence before a tournament by quickly identifying and fixing dead source links.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Label-Based Formatting</strong></td>
-                        <td>Automatically applies a predefined set of formatting rules based on a keyword in the document's title (e.g., "POLICY").</td>
-                        <td>Maintain perfect formatting consistency across all team documents without any manual effort, ensuring everyone's work is uniform.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Label-Based Sharing</strong></td>
-                        <td>Moves the current Google Doc into a specific Google Drive folder and simultaneously shares it with a predefined list of editors based on a selected label.</td>
-                        <td>Automate document routing and permissions. Finish a file, select a label, and the doc is instantly filed and shared with the right people.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Auto-Citation Tool</strong></td>
-                        <td>As part of the Index Creator, this AI-powered feature identifies the author's last name and year from the text to create a standardized citation.</td>
-                        <td>Eliminate the need to manually format citations for every piece of evidence, ensuring all your sources follow the same convention.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Manual Folder Move</strong></td>
-                        <td>Provides a simple interface to move the current Google Doc into a designated Google Drive folder directly from the sidebar.</td>
-                        <td>Quickly organize your files into different project folders without ever leaving the Google Docs interface.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Index Creator</h3>
+                    <p>Uses AI to analyze selected text and automatically generates a technical tag, a simple summary, and a source citation.</p>
+                    <p class="use-case"><strong>Use Case:</strong> Instantly create entries for your team's master index document without manual summarization, ensuring consistency and saving hours of work.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Advanced Card Condensing</h3>
+                    <p>Extracts text between two user-defined markers and uses AI to condense it into a concise, two-sentence summary.</p>
+                    <p class="use-case"><strong>Use Case:</strong> Quickly shorten long pieces of evidence ("cards") to their core claim, making them easier to read and deploy in-round.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Card → Paragraph Tool</h3>
+                    <p>Merges multiple selected paragraphs or list items into a single, clean paragraph, removing awkward line breaks while preserving formatting.</p>
+                    <p class="use-case"><strong>Use Case:</strong> Instantly clean up evidence copied from PDFs or websites that have messy formatting, making your documents readable and uniform.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Unique Tag Creator</h3>
+                    <p>Inserts a short, user-defined title above the selected text, automatically styled as a unique heading (H6) for easy identification.</p>
+                    <p class="use-case"><strong>Use Case:</strong> Create consistent, machine-readable tags for every piece of evidence, which can then be used by other tools to generate a custom outline.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Custom Document Outline</h3>
+                    <p>Scans the document for specific heading types and generates a clickable, in-sidebar table of contents for instant navigation.</p>
+                    <p class="use-case"><strong>Use Case:</strong> Jump directly to any card or section in a long, complex document (like a master file or block) without endless scrolling.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Link Checker (Refined)</h3>
+                    <p>Scans every hyperlink in the document, verifies if it's active, and automatically highlights any broken or inaccessible links in red.</p>
+                    <p class="use-case"><strong>Use Case:</strong> Ensure the integrity of your evidence before a tournament by quickly identifying and fixing dead source links.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Label-Based Formatting</h3>
+                    <p>Automatically applies a predefined set of formatting rules based on a keyword in the document's title (e.g., "POLICY").</p>
+                    <p class="use-case"><strong>Use Case:</strong> Maintain perfect formatting consistency across all team documents without any manual effort, ensuring everyone's work is uniform.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Label-Based Sharing</h3>
+                    <p>Moves the current Google Doc into a specific Google Drive folder and simultaneously shares it with a predefined list of editors based on a selected label.</p>
+                    <p class="use-case"><strong>Use Case:</strong> Automate document routing and permissions. Finish a file, select a label, and the doc is instantly filed and shared with the right people.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Auto-Citation Tool</h3>
+                    <p>As part of the Index Creator, this AI-powered feature identifies the author's last name and year from the text to create a standardized citation.</p>
+                    <p class="use-case"><strong>Use Case:</strong> Eliminate the need to manually format citations for every piece of evidence, ensuring all your sources follow the same convention.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Manual Folder Move</h3>
+                    <p>Provides a simple interface to move the current Google Doc into a designated Google Drive folder directly from the sidebar.</p>
+                    <p class="use-case"><strong>Use Case:</strong> Quickly organize your files into different project folders without ever leaving the Google Docs interface.</p>
+                </div>
+            </div>
         </div>
     </main>
 
