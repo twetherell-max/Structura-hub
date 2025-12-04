@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #5A95E2; /* Serene Blue */
-    --primary-hover-color: #4B7FBF; /* Darker Blue */
+    --primary-color: #A020F0; /* Vibrant Purple */
+    --primary-hover-color: #BF40BF; /* Lighter Purple */
     --secondary-color: #E58E26; /* Muted Orange */
     --secondary-hover-color: #BF721D; /* Darker Orange */
-    --text-color: #212529; /* Dark Grey */
-    --background-color: #f8f9fa; /* Light Grey */
-    --card-background-color: #ffffff; /* White */
-    --border-color: #dee2e6; /* Grey Border */
+    --text-color: #FFFFFF; /* White */
+    --background-gradient: linear-gradient(135deg, #1a0a24, #000000); /* Purple to Black Gradient */
+    --card-background-color: rgba(255, 255, 255, 0.05); /* Glassmorphism effect */
+    --border-color: rgba(255, 255, 255, 0.1); /* Subtle white border */
 }
 
 /* --- Base Styles --- */
@@ -15,11 +15,11 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif; /* Modern sans-serif */
+    font-family: 'Inter', sans-serif;
     line-height: 1.65;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background: var(--background-gradient);
     color: var(--text-color);
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -28,9 +28,9 @@ body {
 
 /* --- Global Containers --- */
 .container {
-    max-width: 1200px; /* Wider content area */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem; /* Horizontal padding for responsiveness */
+    padding: 0 1.5rem;
 }
 
 main {
@@ -38,7 +38,7 @@ main {
 }
 
 section {
-    padding: 5rem 0; /* Generous vertical spacing between sections */
+    padding: 5rem 0;
     border-bottom: 1px solid var(--border-color);
 }
 section:last-of-type {
@@ -60,13 +60,13 @@ h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1em; }
 h3 { font-size: 1.8rem; font-weight: 600; }
 h4 { font-size: 1.3rem; }
 h5 { font-size: 1.1rem; }
-h6 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6c757d; }
+h6 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.7); }
 
 p {
     margin-bottom: 1em;
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #495057;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .inline-image {
@@ -80,7 +80,7 @@ p {
 
 /* --- Header & Navigation --- */
 header {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(10, 10, 10, 0.5);
     backdrop-filter: blur(8px);
     padding: 1rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -98,7 +98,7 @@ nav {
 }
 
 nav a {
-    color: #495057;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     font-weight: 600;
     padding: 0.5rem 1rem;
@@ -201,7 +201,7 @@ ol li {
 
 /* --- Code Blocks/Preformatted Text --- */
 pre {
-    background-color: #e9ecef;
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 1.2rem;
     border-radius: 5px;
     overflow-x: auto;
@@ -213,8 +213,8 @@ pre {
 }
 
 code {
-    background-color: #e9ecef;
-    color: #c7254e;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f89588;
     padding: 0.2em 0.4em;
     border-radius: 3px;
     font-family: 'Fira Code', 'Cascadia Code', monospace;
@@ -226,8 +226,8 @@ footer {
     text-align: center;
     padding: 3rem;
     margin-top: 5rem;
-    background-color: #e9ecef;
-    color: #6c757d;
+    background-color: rgba(10, 10, 10, 0.5);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
     border-top: 1px solid var(--border-color);
 }
@@ -274,36 +274,4 @@ footer {
     nav {
         flex-direction: column;
     }
-}
-
-/* --- Hero Section (for index.html) --- */
-.hero-section {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover-color));
-    color: white;
-    text-align: center;
-    padding: 8rem 0;
-    margin-bottom: 3rem;
-}
-
-.hero-section h1 {
-    font-size: 4rem;
-    color: white;
-    margin-bottom: 0.5em;
-}
-
-.hero-section p {
-    font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 2rem;
-}
-
-.hero-section .button {
-    background-color: white;
-    color: var(--primary-color);
-}
-
-.hero-section .button:hover {
-    background-color: #eee;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
