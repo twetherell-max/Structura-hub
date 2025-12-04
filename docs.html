@@ -3,55 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation - Structura</title>
+    <title>Structura Addon Overview</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png?v=2" type="image/png">
 </head>
 <body>
-
-    <header class="site-header">
-        <div class="navbar">
-            <a href="index.html" class="logo">Structura</a>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="tools.html">Features</a>
-                <a href="docs.html" class="active">Documentation</a>
-                <a href="mission.html">Mission</a>
-                <a href="ethics.html">Ethics</a>
-                <a href="support.html">Support</a>
-            </nav>
-        </div>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="docs.html">Overview</a>
+            <a href="ethics.html">Ethics</a>
+            <a href="mission.html">Mission</a>
+            <a href="support.html">Support</a>
+            <a href="tools.html">Tools</a>
+        </nav>
     </header>
-
-    <main class="container">
-        <div class="card">
-            <h2>Installation Guide</h2>
-            <ol class="list-decimal">
-                <li><strong>Open a Google Doc:</strong> Start in any Google Document where you want to use Structura.</li>
-                <li><strong>Get Add-ons:</strong> Navigate to the menu and click <code>Extensions</code> > <code>Add-ons</code> > <code>Get add-ons</code>.</li>
-                <li><strong>Find Structura:</strong> Use the search bar in the Google Workspace Marketplace to look for "Structura".</li>
-                <li><strong>Install:</strong> Click on the Structura application from the search results and then click the "Install" button.</li>
-                <li><strong>Grant Permissions:</strong> Follow the on-screen prompts to authorize the add-on. This is required for it to manage your documents and integrate with Google Drive.</li>
-            </ol>
-        </div>
+    <main>
+        <h1>Structura Addon Overview</h1>
+        <p>The Structura Addon for Google Docs is a powerful suite of tools designed to streamline document preparation, analysis, and management, particularly for structured content like debate cases or research papers. It integrates advanced AI capabilities to assist with text processing, citation management, and document formatting.</p>
         
-        <div class="card">
-            <h2>API Key Setup (For AI Features)</h2>
-            <p>To use the AI-powered features like the Index Creator and Card Condenser, you need to add your Gemini API key to the script properties. This is a one-time setup.</p>
-            <ol class="list-decimal">
-                <li>Open your Google Doc's script editor by going to <code>Extensions</code> > <code>Apps Script</code>.</li>
-                <li>In the script editor, click on the <strong>Project Settings</strong> (gear icon) on the left sidebar.</li>
-                <li>Scroll down to the "Script Properties" section and click <strong>Add script property</strong>.</li>
-                <li>Enter <code>GEMINI_API_KEY</code> as the "Property" name.</li>
-                <li>Paste your actual Gemini API key into the "Value" field.</li>
-                <li>Click <strong>Save script properties</strong>. The AI features will now be enabled.</li>
-            </ol>
-        </div>
+        <h2>Key Features:</h2>
+        <ul>
+            <li>AI-powered Indexing and Summarization</li>
+            <li>Comprehensive Heading Management</li>
+            <li>Automated Citation Generation and Formatting</li>
+            <li>Document Cleaning and Link Checking</li>
+            <li>Customizable In-Round Timer</li>
+            <li>Flexible Document Sharing and Labeling</li>
+        </ul>
+
+        <h2>Getting Started:</h2>
+        <p>Once installed from the Google Workspace Marketplace, the Structura Addon will appear in your Google Docs sidebar. You can launch its various interfaces from the custom menu item "Structura Tools" in your document menu bar.</p>
+
+        <h2>Detailed Functionality:</h2>
+        <ul>
+            <li><a href="prep_tools.html">Document & Prep Tools Sidebar</a>: Access AI indexing, heading utilities, document cleaning, citation tools, and more.</li>
+            <li><a href="timer.html">In-Round Timer Sidebar</a>: Manage and utilize custom timers for various scenarios.</li>
+            <li><a href="labeling.html">Label Manager Sidebar</a>: Configure and apply labels for document sharing and organization.</li>
+        </ul>
     </main>
-
-    <footer class="site-footer">
-        <p>&copy; 2025 Structura. All rights reserved.</p>
+    <footer>
+        <p>&copy; 2025 Structura AI</p>
     </footer>
-
 </body>
 </html>

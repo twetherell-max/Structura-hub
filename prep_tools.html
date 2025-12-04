@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structura Addon - Document & Prep Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="docs.html">Overview</a>
+            <a href="ethics.html">Ethics</a>
+            <a href="mission.html">Mission</a>
+            <a href="support.html">Support</a>
+            <a href="tools.html">Tools</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Document & Prep Tools Sidebar</h1>
+        <p>This sidebar provides a comprehensive set of tools for preparing, analyzing, and formatting your Google Docs, especially useful for debate research and structured document creation. It leverages AI for various tasks and offers extensive utility functions.</p>
+
+        <section>
+            <h2>AI Index Creator</h2>
+            <p>Utilizes AI to process selected text for either summarizing or indexing purposes.</p>
+            <ul>
+                <li><strong>Generate Index Entry (JSON):</strong> Summarizes selected text into a JSON object, suitable for detailed indexing.</li>
+                <li><strong>Generate Quick Summary Tag:</strong> Creates a concise, single-sentence summary tag from selected text.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Heading Utilities</h2>
+            <p>Tools for efficient management and formatting of document headings.</p>
+            <ul>
+                <li><strong>Promote H2↔H3:</strong> Swaps the heading levels between Heading 2 and Heading 3 for selected paragraphs.</li>
+                <li><strong>Remove All H1s:</strong> Converts all Heading 1 paragraphs to Normal text.</li>
+                <li><strong>Select All Headings:</strong> Selects all paragraphs currently formatted as any heading level (H1-H6).</li>
+                <li><strong>Promote All:</strong> Promotes the heading level of selected headings (e.g., H3 to H2), stopping at H1.</li>
+                <li><strong>Demote All:</strong> Demotes the heading level of selected headings (e.g., H1 to H2), stopping at Normal text for H6.</li>
+                <li><strong>Select Headings by Level:</strong> Selects all paragraphs formatted as a specific heading level chosen from a dropdown.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Document Utilities</h2>
+            <p>Functions to clean, format, and prepare your document content.</p>
+            <ul>
+                <li><strong>Format Stripper:</strong> Removes all custom formatting (bold, italic, font size, color, links, etc.) from selected text.</li>
+                <li><strong>Break & Merge Cleaner:</strong> Merges selected paragraphs and list items into a single paragraph, preserving character formatting.</li>
+                <li><strong>Generate Missing Citations:</strong> Scans the document and uses AI to generate missing author-year citations for content blocks that lack them.</li>
+                <li><strong>Emphasize Highlighted:</strong> Formats highlighted text (text with a background color) as bold and red (emphasis color).</li>
+                <li><strong>Shrink Non-Emphasized Text:</strong> Reduces the font size of text that is not bold or emphasized within selected text or the entire document.</li>
+                <li><strong>Run Link Checker:</strong> Scans the document for hyperlinks, verifies their status, and highlights broken links in red.</li>
+                <li><strong>Tag Organizer:</strong> Finds short, normal-text paragraphs, formats them as Heading 6 (bold, underlined), and specifically formats "C" followed by a number (e.g., C1, C2) as Heading 2 (bold, underlined).</li>
+                <li><strong>Make Document Tournament Ready:</strong> An orchestration tool that:
+                    <ol>
+                        <li>Scans for `(Author 'YY)` citations and inserts a new paragraph below each with "Author, YY" (formatted as H6, bold, underlined).</li>
+                        <li>Runs the Tag Organizer (`findAndFormatTagsToHeading6`).</li>
+                        <li>Runs the Card Structure Condenser (`condenseCardStructure`).</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Debate Citation Block Creator</h2>
+            <p>An AI-powered tool to automatically fetch information from a URL, generate a formatted citation, and insert it into your document at the cursor.</p>
+            <ul>
+                <li><strong>URL to Cite:</strong> Input field for the web address of the source.</li>
+                <li><strong>Optional Initials:</strong> Input field for user initials to be appended to the citation; these initials are saved for future use.</li>
+                <li><strong>Insert Citation Button:</strong> Triggers the AI to fetch, analyze, format, and insert the citation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Custom Outline Creator</h2>
+            <p>Generates a clickable outline of your document based on selected heading levels.</p>
+            <ul>
+                <li><strong>Heading Levels (e.g., 1, 2, 4):</strong> Specify which heading levels to include in the outline.</li>
+                <li><strong>Generate Outline:</strong> Creates a dynamic, clickable list of headings in the sidebar.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Advanced Card Condenser</h2>
+            <p>Condenses content blocks between a specified start marker and an end heading style.</p>
+            <ul>
+                <li><strong>Start Marker:</strong> Text string indicating the beginning of the content block (e.g., "//TNW").</li>
+                <li><strong>End Heading Style:</strong> The heading level that marks the end of the content block (e.g., HEADING2).</li>
+                <li><strong>Condense Card:</strong> Processes and condenses the identified card content.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Custom Tag</h2>
+            <p>Inserts a custom text tag with a specified heading style into the document.</p>
+            <ul>
+                <li><strong>Tag Text:</strong> The content for your custom tag.</li>
+                <li><strong>Heading Style:</strong> The heading level to apply to the tag (e.g., HEADING6).</li>
+                <li><strong>Insert Tag:</strong> Inserts the custom tag into the document.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Custom Tag Outline</h2>
+            <p>Generates a clickable outline specifically for Heading 6 tags found in the document.</p>
+            <ul>
+                <li><strong>Generate Tag Outline (H6):</strong> Creates a dynamic, clickable list of all H6 tags.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Card Structure Condenser</h2>
+            <p>Merges and cleans evidence blocks between a citation and a tag based on predefined rules. This tool does not use AI for its core condensation logic.</p>
+            <ul>
+                <li><strong>Tag Heading Style:</strong> The heading level of the tag that marks the end of the evidence block.</li>
+                <li><strong>Condense Card Structure:</strong> Initiates the merging and cleaning process.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Briefing Creator</h2>
+            <p>Scans the document for highlighted text and author-year citations, then appends them to the document to create a briefing summary.</p>
+            <ul>
+                <li><strong>Tag Heading Style:</strong> The heading level to apply to generated tags in the briefing.</li>
+                <li><strong>Tag Font:</strong> The font family to use for generated tags.</li>
+                <li><strong>Generate Briefing:</strong> Creates the briefing document.</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Structura AI</p>
+    </footer>
+</body>
+</html>
