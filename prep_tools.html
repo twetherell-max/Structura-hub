@@ -17,7 +17,7 @@
             <a href="tools.html">Tools</a>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <img src="images/Gemini_Generated_Image_crkuddcrkuddcrku.png" alt="AI generated image" class="inline-image">
         <h1>Document & Prep Tools Sidebar</h1>
         <p>This sidebar provides a comprehensive set of tools for preparing, analyzing, and formatting your Google Docs, especially useful for debate research and structured document creation. It leverages AI for various tasks and offers extensive utility functions.</p>
@@ -35,8 +35,6 @@
             <h2>Heading Utilities</h2>
             <p>Tools for efficient management and formatting of document headings.</p>
             <ul>
-                <li><strong>Promote H2↔H3:</strong> Swaps the heading levels between Heading 2 and Heading 3 for selected paragraphs.</li>
-                <li><strong>Remove All H1s:</strong> Converts all Heading 1 paragraphs to Normal text.</li>
                 <li><strong>Select All Headings:</strong> Selects all paragraphs currently formatted as any heading level (H1-H6).</li>
                 <li><strong>Promote All:</strong> Promotes the heading level of selected headings (e.g., H3 to H2), stopping at H1.</li>
                 <li><strong>Demote All:</strong> Demotes the heading level of selected headings (e.g., H1 to H2), stopping at Normal text for H6.</li>
@@ -57,9 +55,9 @@
                 <li><strong>Tag Organizer:</strong> Finds short, normal-text paragraphs, formats them as Heading 6 (bold, underlined), and specifically formats "C" followed by a number (e.g., C1, C2) as Heading 2 (bold, underlined).</li>
                 <li><strong>Make Document Tournament Ready:</strong> An orchestration tool that:
                     <ol>
-                        <li>Scans for `(Author 'YY)` citations and inserts a new paragraph below each with "Author, YY" (formatted as H6, bold, underlined).</li>
-                        <li>Runs the Tag Organizer (`findAndFormatTagsToHeading6`).</li>
-                        <li>Runs the Card Structure Condenser (`condenseCardStructure`).</li>
+                        <li>Runs the Link Checker.</li>
+                        <li>Emphasizes all highlighted text.</li>
+                        <li>Shrinks non-emphasized text to 8pt font.</li>
                     </ol>
                 </li>
             </ul>

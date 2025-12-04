@@ -4,7 +4,7 @@
     --secondary-color: #E58E26; /* Muted Orange */
     --secondary-hover-color: #BF721D; /* Darker Orange */
     --text-color: #FFFFFF; /* White */
-    --background-gradient: linear-gradient(135deg, #1a0a24, #000000); /* Purple to Black Gradient */
+    --background-gradient: linear-gradient(135deg, #4c004c, #000000); /* Rich Purple to Black Gradient */
     --card-background-color: rgba(255, 255, 255, 0.05); /* Glassmorphism effect */
     --border-color: rgba(255, 255, 255, 0.1); /* Subtle white border */
 }
@@ -28,13 +28,13 @@ body {
 
 /* --- Global Containers --- */
 .container {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
 }
 
 main {
-    padding-top: 0;
+    padding: 2rem 0;
 }
 
 section {
@@ -66,7 +66,7 @@ p {
     margin-bottom: 1em;
     font-size: 1.1rem;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.9);
+    color: #FFFFFF;
 }
 
 .inline-image {
