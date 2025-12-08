@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Structura</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 0.4em;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: none;
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 1em;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .last-updated {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 2em;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 2em;
+            padding-top: 1.5em;
+            border-top: 1px solid #ecf0f1;
+        }
+        .limited-use {
+            background-color: #ecf0f1;
+            padding: 1em 1.5em;
+            border-radius: 5px;
+            font-weight: 500;
+            color: #34495e;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Structura</h1>
+        <p class="last-updated">Last Updated: December 5, 2025</p>
+
+        <h2>1. Introduction</h2>
+        <p>Welcome to Structura. This Privacy Policy explains how we handle your information when you use our Google Docs add-on ("Structura" or the "Add-on"). Our goal is to help you organize and manage your debate evidence efficiently while respecting your privacy and protecting your data.</p>
+        <p>By using Structura, you agree to the collection and use of information in accordance with this policy.</p>
+
+        <h2>2. Information We Collect</h2>
+        <p>We believe in minimal data collection. Structura only accesses or collects information that is absolutely necessary for its core functionality. We collect the following types of information:</p>
+        <ul>
+            <li><strong>User-Selected Text:</strong> The Add-on only processes the text content that you explicitly select within your Google Document. We do not access, scan, or store any other part of your document or any of your other files.</li>
+            <li><strong>User Preferences (API Keys):</strong> If you provide a Google Gemini API key, we store it securely using Google Apps Script's built-in `PropertiesService`. This service stores the data within your Google account's storage, and it is not accessible to us or any other third party.</li>
+        </ul>
+        <p>We do <strong>not</strong> collect any Personally Identifiable Information (PII) such as your name, email address, location, or Google account details.</p>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>The information we collect is used exclusively to provide and improve the Add-on's features:</p>
+        <ul>
+            <li><strong>To Process Your Content:</strong> The selected text is sent to Google's Gemini AI API to perform the requested action, such as generating a summary, tag, citation, or index entry. This processing happens in real-time.</li>
+            <li><strong>To Authenticate API Requests:</strong> Your provided API key is used solely to authenticate your requests with the Google Gemini AI service.</li>
+        </ul>
+
+        <h2>4. Data Sharing and Third Parties</h2>
+        <p>We do not sell, trade, rent, or otherwise share your data with any third parties for advertising or any other purpose. The only instance of data sharing is for the Add-on's essential functionality:</p>
+        <ul>
+            <li><strong>Google's Gemini AI API:</strong> The selected text you wish to process is sent to Google's Gemini AI API. Your data is subject to Google's privacy policy and terms of service. We do not control how Google processes this data.</li>
+        </ul>
+
+        <h2>5. Data Security</h2>
+        <p>We are committed to ensuring your information is secure. We use Google's own robust infrastructure for data handling:</p>
+        <ul>
+            <li>Data in transit between the Add-on and Google's Gemini API is encrypted using industry-standard TLS (Transport Layer Security).</li>
+            <li>Your API key is stored using Google Apps Script `PropertiesService`, which is a secure storage mechanism provided and managed by Google within your own account environment.</li>
+        </ul>
+
+        <h2>6. Data Retention</h2>
+        <p>We do not store your document content on any servers we own or control.</p>
+        <ul>
+            <li><strong>Document Content:</strong> The selected text is transmitted to the Google Gemini AI API for processing and is not permanently stored or logged by our Add-on.</li>
+            <li><strong>API Keys:</strong> Your API key is stored in your Google account's `PropertiesService` until you clear it or uninstall the Add-on.</li>
+        </ul>
+
+        <h2>7. Limited Use Disclosure (Google API Compliance)</h2>
+        <p class="limited-use">
+            The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.
+        </p>
+
+        <h2>8. User Rights and Control</h2>
+        <p>You maintain full control over your data. You can manage your API key directly within the Add-on's interface. Uninstalling the Add-on will remove it and any associated stored preferences from your Google account.</p>
+
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+        <h2>10. Contact Information</h2>
+        <p class="contact-info">
+            If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:
+            <br>
+            <strong>[Your Contact Email]</strong>
+        </p>
+    </div>
+</body>
+</html>
